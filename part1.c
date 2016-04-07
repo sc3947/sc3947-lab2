@@ -5,13 +5,13 @@
 long part1(long x, long y)
 {
     // TODO: Your code here.
-	// this program compares the two arguments x and y and returns the larger one. 
-    if (x <= y) 
+    // this program compares the two arguments x and y and returns the larger one.
+    if (x <= y)
     {
-    	return y;
+        return y;
     }
-    else 
+    else
     {
-    	return x;
+        return x;
     }
 }
