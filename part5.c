@@ -30,13 +30,17 @@ long bar(long * a, int size)
 long part5(int size)
 {
     // TODO: Your code here.
+	// this program creates an array that has a size equal to the amount of space 
+	// decremented from the stack pointer. we then set the values in the array and 
+	// pass the pointer to the array to the bar function, where it calculates the 
+	// sum of the values added to the product of the values in the array
 
     long a = (long) size;
     // address computation so we can decrement the stack pointer to add space
     a = 0x16 + 8*a;
     a = a & 0xfffffffffffffff0;
 
-    // the size of the array should be the amount decremented
+    // delcare an array where size of the array should be the amount decremented
     int i = 0;
     long array[a];
 
@@ -46,6 +50,5 @@ long part5(int size)
         i++;
     }
 
-    // now that we have set the values in the array, we return what bar calculates
     return bar (array, size);
 }
