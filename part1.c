@@ -5,6 +5,13 @@
 long part1(long x, long y)
 {
     // TODO: Your code here.
-    assert(0);
-    return 0;
+	// this program compares the two arguments x and y and returns the larger one. 
+    if (x <= y) 
+    {
+    	return y;
+    }
+    else 
+    {
+    	return x;
+    }
 }
